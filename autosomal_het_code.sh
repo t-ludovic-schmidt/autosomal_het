@@ -29,7 +29,7 @@ samtools faidx $ref
 
 
 #### Filter bam files
-#### If using WGS or similar data, run Picard's MarkDuplicates step. DO NOT run MarkDuplicates with ddRAD or similar data
+#### If using WGS or similar data, run Picard's MarkDuplicates step and rename files for validation accordingly. DO NOT run MarkDuplicates with ddRAD or similar data
 #### If bam files do not already have read groups, run Picard's AddOrReplaceReadGroups to assign
 for K in $samples;
 do
