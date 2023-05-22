@@ -2,7 +2,7 @@
 Code for deriving heterozygosity estimates from genomic data without filtering for polymorphism.
 
 This code was developed for the paper: 
-### "Schmidt TL, Thia JA, and Hoffmann AA. (2023) How Can Genomics Help or Hinder Wildlife Conservation? Annual Review of Animal Biosciences". 
+### Schmidt TL, Thia JA, and Hoffmann AA. (2023) How Can Genomics Help or Hinder Wildlife Conservation? Annual Review of Animal Biosciences 
 If you use this code, please cite this paper.
 
 This code takes as inputs a set of .bam files aligned to the same reference, and outputs a set of text files containing genotype calls at polymorphic and monomorphic sites. The reference genome can be of any contiguity, even highly fragmented genomes of 10,000s - 100,000s of contigs are appropriate, though additional parameters in GATK may be needed to decrease run time. <br> <br>
