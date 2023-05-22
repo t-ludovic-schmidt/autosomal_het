@@ -1,2 +1,2 @@
-# autosomal_het
-Code for deriving autosomal heterozygosity estimates from genomic data
+# Autosomal Heterozygosity
+Code for deriving heterozygosity estimates from genomic data without filtering for polymorphism
