@@ -168,7 +168,7 @@ done
 
 
 #### OPTIONAL: Output expected heterozygosity for a group of samples, "POP1".
-#### This produces a VCF file for the group, then filters it based on missing data, spanning deletions, star alleles, and minimum and maximum depth, then for each confidently genotyped site lists the number of individuals that are HomRef, HomAlt, or Het. 
+#### This produces a VCF file for the group,  filters it based on missing data, spanning deletions, star alleles, and minimum and maximum depth, decomposes sites with more than two alleles into consecutive biallelic sites, then for each confidently genotyped site lists the number of individuals that are HomRef, HomAlt, or Het. 
 #### Sites with more than two alleles are atomised, retaining all variants for heterozygosity estimation.
 #### Set the POP1_samples variable below before running this code
 
