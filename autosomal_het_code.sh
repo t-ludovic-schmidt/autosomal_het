@@ -128,7 +128,7 @@ $gatk --java-options "-Xmx16g" SelectVariants \
 
 
 #### Output individual (observed) heterozygosity.
-#### This produces VCF files for each individual, then filters these based on missing data, star alleles, and minimum and maximum depth, then calls each confidently genotyped site as HomRef, HomAlt, or Het. 
+#### This produces VCF files for each individual, filters these based on missing data, star alleles, and minimum and maximum depth, decomposes sites with more than two alleles into consecutive biallelic sites, then calls each confidently genotyped site as HomRef, HomAlt, or Het. 
 #### This uses a default min depth of 15 and a max of 50. See Nielsen R et al 2011 Nat Rev Genet, and Li H 2014 Bioinformatics for details on setting these cutoffs. 
 #### The second half of this code is built from user Kevin Blighe's (https://www.biostars.org/u/41557/) comment at https://www.biostars.org/p/298361/
 #### This code can be easily extended for expected heterozygosity. See section below
