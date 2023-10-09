@@ -2,7 +2,7 @@
 For deriving heterozygosity estimates from genomic data without filtering for polymorphism.
 
 This code was developed for the paper: 
-### Schmidt TL, Thia JA, and Hoffmann AA. (2023) How Can Genomics Help or Hinder Wildlife Conservation? Annual Review of Animal Biosciences  
+### Schmidt TL, Thia JA, and Hoffmann AA. (2024) How Can Genomics Help or Hinder Wildlife Conservation? Annual Review of Animal Biosciences. 12 (1). <br>https://doi.org/10.1146/annurev-animal-021022-051810 
 <br> <br>
 If you use this code, please cite the above paper. <br> <br>
 This code builds on previous work (Schmidt et al. 2021 Meth Ecol Evol; https://doi.org/10.1111/2041-210X.13659). Optimal heterozygosity workflows will retain all individuals at the genotyping stage, but then filter each individual separately for depth and missing data, and will retain all monomorphic, biallelic, and polyallelic sites that pass these filters. This is one such workflow.
