@@ -135,6 +135,7 @@ $gatk --java-options "-Xmx16g" SelectVariants \
 for K in $samples;
 do
 	bcftools view -s ${K} $workspace/final.vcf.gz | \
+		bcftools filter -e 'GT[*] = "mis"' | \
 		bcftools filter -e 'AVG(FMT/DP) < 15' | \
 		bcftools filter -e 'ALT="*"' | \
 		bcftools filter -e 'AVG(FMT/DP) > 50' | \
