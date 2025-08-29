@@ -116,9 +116,9 @@ $gatk --java-options "-Xmx16g" VariantFiltration \
 $gatk --java-options "-Xmx16g" SelectVariants \
 	-V $workspace/filt.vcf.gz \
 	--verbosity ERROR \
-	--remove-unused-alternates \
-	--exclude-filtered \
--O $workspace/final.vcf.gz
+	--set-filtered-gt-to-nocall TRUE \
+	-O $workspace/final.vcf.gz
+
 
 
 #### OPTIONAL: If you have run genotyping and filtering on subsets of intervals, these can be merged into a final VCF with the following.
